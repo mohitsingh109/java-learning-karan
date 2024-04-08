@@ -1,0 +1,37 @@
+Assignment Title: Java Fundamentals
+
+Assignment Description:
+You are tasked with creating a Java program to manage a student's information and their grades. This program should utilize the concepts covered in the following topics:
+
+Basic Syntax and Data Types
+Operators and Expressions
+Control Flow Statements
+Methods and Functions
+Classes and Objects
+Assignment Tasks:
+
+Define a class called "Student" with the following attributes:
+ Name (String)
+ Age (int)
+ Grade (double)
+ Status (boolean indicating whether the student is active or not)
+
+Implement constructors for the "Student" class:
+ A default constructor that initializes the attributes with default values.
+ A parameterized constructor that takes values for the name, age, and grade.
+
+Create methods within the "Student" class to:
+    Display student information.
+    Update student's grade.
+    Check if the student is eligible for promotion to the next grade based on a passing grade threshold.
+
+Implement a main class called "StudentManagement" with the following functionalities:
+    Create instances of the "Student" class.
+    Display student information.
+    Update student grades.
+    Check eligibility for promotion.
+
+Utilize control flow statements such as if-else statements and loops (for, while, or do-while) to control the flow of execution in your program.
+Demonstrate the usage of various operators and expressions within your program, such as arithmetic, relational, logical, and bitwise operators.
+
+Feel free to expand upon or modify the assignment as needed to suit your learning objectives. Good luck with your assignment!

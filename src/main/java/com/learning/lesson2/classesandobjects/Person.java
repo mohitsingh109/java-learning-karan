@@ -1,4 +1,4 @@
-package com.learning.test1;
+package com.learning.lesson2.classesandobjects;
 
 
 //AM (public or default)

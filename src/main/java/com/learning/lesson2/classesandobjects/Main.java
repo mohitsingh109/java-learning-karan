@@ -1,12 +1,10 @@
-package com.learning.test;
-
-import com.learning.test1.Person;
+package com.learning.lesson2.classesandobjects;
 
 public class Main {
 
     public static void main(String[] args) { // JVM
         //DT VN = new DT();
-        Person karan = new Person("Karan", 10, "M", 1234, 1234); // creating a object
+        com.learning.lesson2.classesandobjects.Person karan = new com.learning.lesson2.classesandobjects.Person("Karan", 10, "M", 1234, 1234); // creating a object
         //DT VN = Value
         int abc = 10;
 

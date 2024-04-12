@@ -10,9 +10,14 @@ public class ElectricCar extends Car {
 
     private int batteryCapacity;
 
-    public ElectricCar(String brand, int year, int batteryCapacity) {
-        super(brand, year); // parent constructor
+    public ElectricCar(String brand, int year, int batteryCapacity, String musicSystem) {
+        super(brand, year, musicSystem); // parent constructor
         this.batteryCapacity = batteryCapacity;
+    }
+
+    @Override
+    public double calculatePrice() {
+        return super.calculatePrice() + 50; // 250 + 50 = 300
     }
 
     public int getBatteryCapacity() {

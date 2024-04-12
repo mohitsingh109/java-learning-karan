@@ -6,19 +6,42 @@ public class Car {
 
     private int year;
 
+    private String musicSystem;
+
+    private boolean radio;
+
+    private double price = 250;
+
    // private String fuelType;
 
     //private int numberOfDoor;
 
-    public Car(String brand, int year) {
+
+    public Car(String brand, int year, String musicSystem) {
         this.brand = brand;
         this.year = year;
+        this.musicSystem = musicSystem;
         //this.fuelType = fuelType;
     }
 
-//    public Car() {
-//        System.out.println("Car constructor");
-//    }
+    public Car(String brand, int year) {
+        this(brand, year, null);
+    }
+
+    public void ai() {
+        System.out.println("f1");
+        System.out.println("f2");
+        System.out.println("f3");
+    }
+
+    public void changeGear() {
+        System.out.println("Change gear");
+    }
+
+    public double calculatePrice() {
+        return price;
+    }
+
 
     public String getBrand() {
         return brand;
@@ -43,4 +66,13 @@ public class Car {
 //    public void setFuelType(String fuelType) {
 //        this.fuelType = fuelType;
 //    }
+
+
+    public boolean isRadio() {
+        return radio;
+    }
+
+    public void setRadio(boolean radio) {
+        this.radio = radio;
+    }
 }

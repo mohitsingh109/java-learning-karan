@@ -12,8 +12,8 @@ public class Tata extends ElectricCar{
 
     private String tataAiVersion;
 
-    public Tata(String brand, int year, int batteryCapecity, String tataAiVersion) {
-        super(brand, year, batteryCapecity);
+    public Tata(String brand, int year, int batteryCapecity, String musicSystem, String tataAiVersion) {
+        super(brand, year, batteryCapecity, musicSystem);
         this.tataAiVersion = tataAiVersion;
     }
 

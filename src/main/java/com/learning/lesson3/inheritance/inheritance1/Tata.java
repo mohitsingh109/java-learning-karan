@@ -1,4 +1,4 @@
-package com.learning.lesson3.inheritance;
+package com.learning.lesson3.inheritance.inheritance1;
 
 
 /**
@@ -11,6 +11,10 @@ package com.learning.lesson3.inheritance;
 public class Tata extends ElectricCar{
 
     private String tataAiVersion;
+
+    public Tata(String brand, int year, int batteryCapacity, String musicSystem) {
+        super(brand, year, batteryCapacity, musicSystem);
+    }
 
     public Tata(String brand, int year, int batteryCapecity, String musicSystem, String tataAiVersion) {
         super(brand, year, batteryCapecity, musicSystem);

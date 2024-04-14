@@ -1,11 +1,13 @@
-package com.learning.lesson3.inheritance;
+package com.learning.lesson3.inheritance.inheritance2;
+
+import com.learning.lesson3.inheritance.inheritance1.ElectricCar;
 
 /**
  *  Multilevel Inheritance
  *  Car(P) ---> Electric Car(C) ---> Tesla(C)
  *
  */
-public class Tesla extends ElectricCar{
+public class Tesla extends ElectricCar {
     private String name;
 
 
@@ -17,6 +19,11 @@ public class Tesla extends ElectricCar{
 //    public void myCustomChangeGear() {
 //        System.out.println("Tesla change gear");
 //    }
+
+    public void changeKey() {
+        //value = value + "TeslaKey";
+        appendValue("TeslaKey");
+    }
 
     @Override
     public void changeGear(){

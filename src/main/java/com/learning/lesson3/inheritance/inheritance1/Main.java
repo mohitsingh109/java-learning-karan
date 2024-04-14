@@ -1,4 +1,6 @@
-package com.learning.lesson3.inheritance;
+package com.learning.lesson3.inheritance.inheritance1;
+
+import com.learning.lesson3.inheritance.inheritance2.Tesla;
 
 public class Main {
     public static void main(String[] args) {

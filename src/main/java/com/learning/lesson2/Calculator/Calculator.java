@@ -1,6 +1,7 @@
 package com.learning.lesson2.Calculator;
 
 public class Calculator {
+    // Function overloading
 
     //static function
     public static int add(int a, int b) { // No

@@ -1,4 +1,4 @@
-package com.learning.lesson3.inheritance;
+package com.learning.lesson3.inheritance.inheritance1;
 
 public class Car {
 
@@ -12,10 +12,19 @@ public class Car {
 
     private double price = 250;
 
+    private String value = "sdkjgfdsklgs";
+
    // private String fuelType;
 
     //private int numberOfDoor;
 
+
+    public Car() {
+    }
+
+    protected void appendValue(String abc) {
+        value = value + abc;
+    }
 
     public Car(String brand, int year, String musicSystem) {
         this.brand = brand;

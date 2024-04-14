@@ -1,4 +1,4 @@
-package com.learning.lesson3.inheritance;
+package com.learning.lesson3.inheritance.inheritance1;
 
 
 /**

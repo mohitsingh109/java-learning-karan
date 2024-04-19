@@ -1,0 +1,77 @@
+// Student class
+class Student {
+    private String name;
+    private int age;
+    private double grade;
+    private boolean isActive;
+
+    // Default constructor
+    public Student() {
+        this.name = "Unknown";
+        this.age = 0;
+        this.grade = 0.0;
+        this.isActive = false;
+    }
+
+    // Parameterized constructor
+    public Student(String name, int age, double grade) {
+        this.name = name;
+        this.age = age;
+        this.grade = grade;
+        this.isActive = true;
+    }
+
+    // Display student information
+    public void displayInfo() {
+        System.out.println("Student Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Grade: " + grade);
+        System.out.println("Status: " + (isActive ? "Active" : "Inactive"));
+    }
+
+    // Update student grade
+    public void updateGrade(double newGrade) {
+        this.grade = newGrade;
+    }
+
+    // Check eligibility for promotion
+    public boolean isEligibleForPromotion(double passingGradeThreshold) {
+        return grade >= passingGradeThreshold;
+    }
+}
+
+// StudentManagement class
+public class StudentManagement {
+    public static void main(String[] args) {
+        // Create student objects
+        Student student1 = new Student("John Doe", 20, 85.5);
+        Student student2 = new Student("Jane Smith", 22, 75.0);
+
+        // Display student information
+        System.out.println("Student 1 Information:");
+        student1.displayInfo();
+        System.out.println();
+
+        System.out.println("Student 2 Information:");
+        student2.displayInfo();
+        System.out.println();
+
+        // Update student grade
+        student1.updateGrade(90.0);
+        student2.updateGrade(80.0);
+
+        // Display updated student information
+        System.out.println("Updated Student 1 Information:");
+        student1.displayInfo();
+        System.out.println();
+
+        System.out.println("Updated Student 2 Information:");
+        student2.displayInfo();
+        System.out.println();
+
+        // Check eligibility for promotion
+        double passingGradeThreshold = 70.0;
+        System.out.println("Student 1 is eligible for promotion: " + student1.isEligibleForPromotion(passingGradeThreshold));
+        System.out.println("Student 2 is eligible for promotion: " + student2.isEligibleForPromotion(passingGradeThreshold));
+    }
+}

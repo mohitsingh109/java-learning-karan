@@ -12,6 +12,15 @@ public class Manager extends Employee {
         this.projectName = projectName;
     }
 
+    @Override
+    public void addBonus(double bonus) {
+        super.addBonus(bonus + 10); // 15
+    }
+
+    public void showTeamSalary() {
+        System.out.println("Team Salary");
+    }
+
     public int getTeamSize() {
         return teamSize;
     }

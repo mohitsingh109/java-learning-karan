@@ -8,30 +8,39 @@ public class Main {
         // Hr.java
         // Svp.java
         // 1000.... (Mix of all type of employee)
-        // Run time Polymorphism
-        // Security
-        // Reduce the scope
-        // Easy to access
 
-        manager.addBonus(10);
+        // Run time Polymorphism
+        // Security (99%)
+        //    Reduce the scope
+        //    Easy to access
+
+        manager.addBonus(10); // 10 + 10?
+        manager.showTeamSalary(); // yes
         javaDeveloper.addBonus(10);
         //1000....
 
-
-        String[] employee = {manager.getName(), javaDeveloper.getName()};
 
         //Employee[] list  = sql("select * from employee"); // HR, SVP, Java
         //Run time Polymorphism (Parent can handle child object)
         Employee[] list = {manager, javaDeveloper};
 
+        Employee employee = new Employee("Test", 20);
+
+
         for (Employee e: list) {
             e.addBonus(5);
+            //e.showTeamSalary();
         }
 
-        int[] value = {10, 20, 30};
+        // Employee manager1 = sql("select * from manager where id = 5");
+        Employee manager1 = new Manager("Mohit", 10, 5, "FedRamp");
 
-//        for(int v: value) { // for each loop
-//            System.out.println(v);
-//        }
+        printEmployeeDetails(manager1); // yes
+        printEmployeeDetails(manager); // Yes Security
+        printEmployeeDetails(javaDeveloper); // Yes
+    }
+
+    public static void printEmployeeDetails(Employee employee) {
+        System.out.println(employee.getName());
     }
 }

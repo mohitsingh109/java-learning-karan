@@ -16,6 +16,10 @@ public abstract class Phone { // abstract method
 
     public abstract void captureImage(); // abstract method
 
+    public void flashLight() {
+        System.out.println("Switch on flash light");
+    }
+
     public String getName() {
         return name;
     }

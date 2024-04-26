@@ -1,12 +1,47 @@
 package com.learning.leasson7.string;
 
+import java.time.Instant;
+
 public class Main {
 
     public static void main(String[] args) {
-        String name = "Karan";
-        char[] name1 = {'K', 'a', 'r', 'a', 'n'};
+        String name = "Karan"; // new String("karan");
+        char[] name1 = {'K', 'a', 'r', 'a', 'n'}; // yes
 
+        name = "Hello " + name; // costly operation
+        //char[] name1 = {'H', 'e', 'l', 'l', 'o',' ', K', 'a', 'r', 'a', 'n'};
         System.out.println(name);
+
+        StringBuilder stringBuilder = new StringBuilder();
+        //char[] name1 = new char[100];
+        stringBuilder.append("Karan");
+        // name1 = {'K', 'a', 'r', 'a', 'n', ' ',........};
+        stringBuilder.append(" ");
+
+        // String
+        System.out.println("start");
+        Long start = Instant.now().toEpochMilli();
+        String value = "";
+        for(int i = 0; i < 1000000; i++) {
+            //value = value + i + "sdklfdsklgdsklghdsklghdskghdskghksdhgdskghdskghdsklhgdsklghdsklg";
+        }
+        Long end = Instant.now().toEpochMilli();
+        System.out.println(end - start); //
+        System.out.println("end");
+
+        ////////////////////////////////////////////////////////
+        System.out.println("start sb");
+        StringBuilder stringBuilder1 = new StringBuilder();
+        start = Instant.now().toEpochMilli();
+        for(int i = 0; i < 1000000; i++) {
+            stringBuilder1.append(i).append("sdklfdsklgdsklghdsklghdskghdskghksdhgdskghdskghdsklhgdsklghdsklg");
+            //value = value + i + "sdklfdsklgdsklghdsklghdskghdskghksdhgdskghdskghdsklhgdsklghdsklg";
+        }
+
+        end = Instant.now().toEpochMilli();
+        System.out.println(end - start);
+        System.out.println("end sb");
+        ////////////////////////////////////////////////////////
 
         for (int i = 0; i < name.length(); i++) {
             System.out.println(name.charAt(i));
@@ -62,5 +97,6 @@ public class Main {
             System.out.println(a);
         }
 
+        //
     }
 }

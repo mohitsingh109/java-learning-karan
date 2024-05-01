@@ -14,7 +14,7 @@ public class ArraysJava {
         // continue memory block
         int[] arr1 = {10, 20, 30};
         int[] arr = new int[2]; // default 0
-        arr[0] = 1;
+        arr[0] = 1; // add
         arr[1] = 3;
 
         // add 5

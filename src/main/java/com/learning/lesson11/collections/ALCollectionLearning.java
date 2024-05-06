@@ -1,6 +1,7 @@
 package com.learning.lesson11.collections;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ALCollectionLearning {
 
@@ -40,5 +41,7 @@ public class ALCollectionLearning {
         Person p = new Person("Karan");
         personArrayList.add(p);
         personArrayList.add(new Person("Mohit"));
+
+        List<Integer> list2 = new ArrayList<>();
     }
 }

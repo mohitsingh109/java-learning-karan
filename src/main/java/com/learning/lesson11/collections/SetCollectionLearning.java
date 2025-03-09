@@ -50,7 +50,7 @@ public class SetCollectionLearning {
 
         // data stored in increasing order
         for(Integer value: treeSet) {
-            System.out.println(value);
+            System.out.println(value); // increasing order
         }
 
         // it maintain the insertion order but hashset doesn't

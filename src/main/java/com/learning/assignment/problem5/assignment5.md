@@ -13,7 +13,7 @@ You are tasked with developing a simple online shopping system in Java. The syst
 
 2. **Customer Class:**
     - Create a class named `Customer` to represent customers using the online shopping system.
-    - Include data members such as `customerName`, `email`, `address`, and `cart` (an ArrayList to store the products added to the customer's shopping cart).
+    - Include data members such as `customerName`, `email`, `address`, and `cart` (customer's shopping cart).
     - Implement appropriate constructor(s), getter and setter methods, and any other necessary methods.
 
 3. **ShoppingCart Interface:**
@@ -33,3 +33,38 @@ You are tasked with developing a simple online shopping system in Java. The syst
     - Create a `Main` class with a `main` method to serve as the entry point of the program.
     - Implement a simple menu-driven user interface using loops and if-else statements to allow users to interact with the online shopping system.
     - Provide options for browsing products, adding/removing items to/from the cart, viewing the cart, proceeding to checkout, and exiting the program.
+
+
+
+Advance: 5+
+
+Data Structure
+Design System
+LLD
+HLD
+
+
+
+class Customer {
+   ....
+   ShoppingCart cart; // String boot
+
+   public Customer(String name, ...., ShoppingCart cart) {
+      
+   }
+
+   
+
+}
+
+Customer karan = new Customer("Karan", ..., new ShoppingCartImpl());
+
+Customer mohit = new Customer("Mohit", ..., new ShoppingCartImpl());
+
+
+class ShoppingCartImpl implements ShoppingCart {
+
+   private ArrayList<Product> products;
+
+.....
+}

@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class ExceptionLearning {
 
-    public static void f1() throws FileNotFoundException {
+    public static void f1() throws FileNotFoundException{
         try {
             File myObj = new File("filename.txt");
             Scanner myReader = new Scanner(myObj); // FileNotFoundException
@@ -15,9 +15,8 @@ public class ExceptionLearning {
                 System.out.println(data);
             }
             myReader.close();
-        }catch (FileNotFoundException e) {
-            System.out.println("File not present");
-            throw e; // navigate to calling function
+        } catch (FileNotFoundException e) {
+            throw e;
         }
     }
 
@@ -35,19 +34,19 @@ public class ExceptionLearning {
     public static void f3() {
         String karan = "Karan";
 
-        if(karan.contains("z")) {
-            throw new CustomUnCheckedException("Karan contains z is invalid");
+        if(karan.contains("K")) {
+            throw new CustomUnCheckedException("Karan contains z is invalid"); //
         }
     }
 
     public static void f4(String name) {
 
         if(name == null) {
-            throw new NullPointerException();
+            throw new NullPointerException(); // Java
         }
 
         if(name.isBlank()) {
-            throw new IllegalArgumentException("Name is blank");
+            throw new IllegalArgumentException("Name is blank"); // Java
         }
     }
 }

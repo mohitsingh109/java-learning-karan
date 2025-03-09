@@ -1,9 +1,9 @@
 package com.learning.leasson10.generics;
 
-public class Test<R, J> {
+public class Test<R, J> { // Test<String, Integer>
 
-    private R obj;
-    private J obj1;
+    private R obj; //String
+    private J obj1; //Integer
 
     public Test(R obj, J obj1) {
         this.obj = obj;

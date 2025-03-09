@@ -9,18 +9,32 @@ public class Main {
     // 2) Unchecked Exception (Prefer)
 
     public static void main(String[] args) {
+//        try {
+//            ExceptionLearning.f1();
+//            ExceptionLearning.f2();
+//            //...
+//        } catch (FileNotFoundException | CustomCheckedException e) {
+//            System.out.println(e.getMessage());
+//            e.printStackTrace();
+//        } finally {
+//            // it will aAlways call either exception raised or not
+//            //db.close();
+//            //sendNotification();
+//            //clean Up
+//        }
+
+//        try {
+//            ExceptionLearning.f3();
+//        }catch (CustomUnCheckedException e) {
+//            System.out.println("Error in f3()");
+//            e.printStackTrace();
+//        }
+
         try {
             ExceptionLearning.f1();
-            ExceptionLearning.f2();
-            //...
-        } catch (FileNotFoundException | CustomCheckedException e) {
+        } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
             e.printStackTrace();
-        } finally {
-            // it will aAlways call either exception raised or not
-            //db.close();
-            //sendNotification();
-            //clean Up
         }
     }
 }

@@ -3,6 +3,7 @@ package com.learning.lesson11.collections;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
 
 public class MapCollectionLearning {
@@ -32,6 +33,15 @@ public class MapCollectionLearning {
         for(Map.Entry<String, String> entry: hashMap.entrySet()) {
             System.out.println(entry.getKey());
             System.out.println(entry.getValue());
+        }
+
+
+        for(String key: hashMap.keySet()) {
+            System.out.println(key + " " + hashMap.get(key));
+        }
+
+        for(String values1: hashMap.values()) {
+            System.out.println(values1);
         }
 
         System.out.println("-------------");
